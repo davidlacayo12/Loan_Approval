@@ -1,0 +1,42 @@
+[project]
+name = "Loan_Approval_App"
+version = "1.0.0"
+description = "Loan Approval App" 
+authors = [
+  { name = "David Lacayo", email = "davidlacayo2@gmail.com" }
+]
+requires-python = ">=3.9"
+readme = "README.md"
+license = { text = "MIT" }
+
+dependencies = [
+  "scikit-learn>=1.8.0",
+  "pandas",
+  "seaborn",
+  "numpy",
+  "matplotlib",
+  "plotly",
+  "pydantic",
+  "openpyxl",
+  "PyYAML",
+  "requests",
+  "click",
+  "fastapi[standard]"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "backend"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+##
+## [project.scripts]
+## serve-model = "backend.run:serve"
+
+[tool.mypy]
+ignore_missing_imports = true
