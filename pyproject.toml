@@ -32,11 +32,10 @@ build-backend = "setuptools.build_meta"
 package-dir = {"" = "backend"}
 
 [tool.setuptools.packages.find]
-where = ["src"]
+where = ["backend"]
 
-##
-## [project.scripts]
-## serve-model = "backend.run:serve"
+[project.scripts]
+serve-model = "app.run:serve"
 
 [tool.mypy]
 ignore_missing_imports = true

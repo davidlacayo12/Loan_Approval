@@ -12,5 +12,19 @@
     "@headlessui/react": "^2.2.9",
     "@heroicons/react": "^2.2.0",
     "recharts": "^3.6.0"
-  }
+  },
+  "description": "This project provides a sample machine learning workflow that includes:",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidlacayo12/Loan_Approval.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/davidlacayo12/Loan_Approval/issues"
+  },
+  "homepage": "https://github.com/davidlacayo12/Loan_Approval#readme"
 }

@@ -40,37 +40,34 @@ Then, run the setup script to create a virtual environment and install all depen
 
 [Loan Approval Dataset](https://www.kaggle.com/datasets/anishdevedward/loan-approval-dataset/data)
 
-## Serving -> NEED TO UPDATE THIS
+## Serving
 
 Run either:
-`python -m src.sample_model` or `serve-model`
-and navigate to: 
-http://127.0.0.1:8000/docs
-for development.
+`python -m backend.app` or 
 
-For Docker:
-- Build: `docker build -t backend .`
-- Run: `docker run -p 8000:8000 backend`
-- Open: [http://localhost:8000/docs](http://localhost:8000/docs)
+`serve-model` if you have run `pip install -e .`
+
+and navigate to: http://127.0.0.1:8000/docs
 
 ## Frontend
 
-`cd loan-ui`
-`npm install`
-`npm run dev`
+```shell
+cd frontend
+npm install
+npm run dev
+```
 
 
 ## Putting it All Together
 
-```bash
-
+```shell
 npm init -y
 npm install --save-dev concurrently
 npm install @headlessui/react @heroicons/react
-npm install recharts
-
 ```
 
 There should be node-modules at the root/ and root/frontend/ folders. Then run:
 
-`npm run dev`
+```shell
+npm run dev
+```

@@ -9,7 +9,7 @@ __author__ = "David Lacayo"
 
 def serve():
     uvicorn.run(
-        "main:app",
+        "app.main:app",
         host="0.0.0.0",
         port=8000,
         reload=True,
